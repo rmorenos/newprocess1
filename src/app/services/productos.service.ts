@@ -27,4 +27,9 @@ export class ProductosService {
 
     });
   }
+
+  getProducto(id: string){
+   return  this.http.get(`https://newprocess-d1950.firebaseio.com/productos/${id}.json`);
+
+  }
 }

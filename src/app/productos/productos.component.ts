@@ -16,7 +16,7 @@ export class ProductosComponent implements OnInit {
   }
 
   redirectproductos() {
-    this.router.navigate(['/productos/productos']);
+    this.router.navigate(['/productos']);
   }
 
 

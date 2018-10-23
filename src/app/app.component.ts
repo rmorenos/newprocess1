@@ -14,7 +14,6 @@ export class AppComponent {
   constructor(public information: InfoPaginaService,
               public productos: ProductosService ) {
 
-    this
 
   }
 

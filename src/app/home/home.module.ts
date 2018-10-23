@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
@@ -12,6 +14,7 @@ import { HomeComponent } from './home.component';
     HomeRoutingModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent, HeaderComponent, FooterComponent],
+  exports: [HomeComponent, HeaderComponent, FooterComponent],
 })
 export class HomeModule { }
