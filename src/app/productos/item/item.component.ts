@@ -4,6 +4,7 @@ import {ProductosService} from "../../services/productos.service";
 import {ProductoDescripcionInterface} from "../../interfaces/producto-descripcion.interface";
 import {InfoPaginaService} from "../../services/info-pagina.service";
 
+
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
@@ -21,7 +22,6 @@ export class ItemComponent implements OnInit {
         //console.log(parametros['id']);
         this.productoServi.getProducto(parametros['id'])
           .subscribe((producto: ProductoDescripcionInterface) => {
-            console.log(producto);
             this.id = parametros['id'];
             this.producto = producto;
           });
