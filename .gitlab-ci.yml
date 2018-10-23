@@ -1,0 +1,18 @@
+pages:
+    cache:
+      paths:
+      - node_modules/
+    stage: deploy
+    script:
+#      - rm ./package-lock.json
+      - npm install
+      - ng build --prod
+#      - sshpass -p 'cl.2817' ssh root@35.190.179.253  "rm -rf /var/www/newprocess.databin.cl/public_html"
+      - sshpass -p 'cl.2817' scp -o StrictHostKeyChecking=no -rp dist/newprocess root@35.190.179.253:/var/www/newprocess.databin.cl/public_html
+      - sshpass -p 'cl.2817' ssh root@35.190.179.253  "systemctl restart nginx"
+#      - mv dist/newprocess public
+    artifacts:
+      paths:
+        - public
+    only:
+      - master
