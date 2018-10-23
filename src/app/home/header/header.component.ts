@@ -43,4 +43,10 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/about']);
   }
 
+  redirectToMineria() {
+
+    this.router.navigate(['/search/mineria']);
+  }
+
+
 }
