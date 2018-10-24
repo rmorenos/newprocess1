@@ -11,7 +11,7 @@
 
       <mdb-card-body class="px-lg-5 pt-0">
 
-        <form class="text-center" style="color: #757575;" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <form class="text-center" style="color: #757575;" >
 
           <div class="md-form mt-3">
             <input type="text" formControlName="contactFormName" id="materialContactFormName" class="form-control"
@@ -28,7 +28,7 @@
           <span>Tema</span>
           <div class="row">
             <div class="col-md-12 mx-auto">
-              <mdb-select formControlName="contactFormSubjects" [options]="optionsSelect" placeholder="Choose your option"></mdb-select>
+              <mdb-select formControlName="contactFormSubjects"  placeholder="Choose your option"></mdb-select>
             </div>
           </div>
 
@@ -45,7 +45,7 @@
           </div>
 
           <button mdbBtn color="info" outline="true" rounded="true" block="true" class="z-depth-0 my-4 waves-effect"
-                  mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Enviar</button>
+                  mdbWavesEffect type="button">Enviar</button>
 
         </form>
 
