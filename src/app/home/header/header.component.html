@@ -2,9 +2,9 @@
   <mdb-navbar-brand>
     <a class="navbar-brand" (click)="redirectToHome()">INICIO</a>
     <a class="navbar-brand" (click)="redirectToProdcutos()" routerLinkActive="active">PRODUCTOS</a>
-    <a class="navbar-brand" href="">NOTICIAS</a>
+    <a class="navbar-brand" (click)="redirectToNoticias()">NOTICIAS</a>
     <a class="navbar-brand"  (click)="redirectToabout()" >NOSOTROS</a>
-    <a class="navbar-brand" href="">CONTACTO</a>
+    <a class="navbar-brand" (click)="redirectToContacto()">CONTACTO</a>
   </mdb-navbar-brand>
   <links>
 
@@ -12,7 +12,7 @@
       <div class="md-form mt-0">
         <input class="form-control mr-sm-2" type="text"
                (keyup.enter)="buscarProducto(txtBuscar.value)"
-               placeholder="Buscar....." aria-label="Search"
+               placeholder="Buscar Productos" aria-label="Search"
         #txtBuscar>
         <button (click)="buscarProducto(txtBuscar.value)" mdbBtn color="success" outline="true" size="sm" class="my-0 waves-light" type="button" mdbWavesEffect>Buscar</button>
       </div>

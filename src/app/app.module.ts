@@ -10,14 +10,16 @@ import { AboutComponent } from './shared/about/about.component';
 import { NoticiasComponent } from './shared/noticias/noticias.component';
 
 
-import {InfoPaginaService} from "./services/info-pagina.service";
-import {HttpClientModule} from "@angular/common/http";
+import {InfoPaginaService} from './services/info-pagina.service';
+import {HttpClientModule} from '@angular/common/http';
+import { ContactoComponent } from './shared/contacto/contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

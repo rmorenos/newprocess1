@@ -36,11 +36,15 @@ export class HeaderComponent implements OnInit {
   }
   redirectToContacto() {
 
-    this.router.navigate(['/home']);
+    this.router.navigate(['/contacto']);
   }
   redirectToabout() {
 
     this.router.navigate(['/about']);
+  }
+  redirectToNoticias() {
+
+    this.router.navigate(['/noticias']);
   }
 
 }
